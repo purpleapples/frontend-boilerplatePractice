@@ -1,0 +1,37 @@
+{
+    "compilerOptions":{
+        // type Checking
+        "noImplicitAny":true,
+        "noUnusedParameters":true,
+        "noUnusedLocals":true,
+        "strict":true,
+
+        // module
+        // "baseUrl":"./",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+
+        // emit : 해당 top level 은 babel에서 담당한다.
+        //"outDir": "./dist/", 
+        //"sourceMap":true,
+        
+        // Language and Enviroment                
+        "target": "es5",
+        "jsx": "react",                
+
+        // javascript support
+        "allowJs": false,
+
+        // interop
+        "esModuleInterop":true,
+        "allowSyntheticDefaultImports":true,
+    }
+    ,"include":[
+        "src/**/*"
+      ],
+      "exclude":[
+        "node_modules",
+        "dist"
+      ]
+}
+
